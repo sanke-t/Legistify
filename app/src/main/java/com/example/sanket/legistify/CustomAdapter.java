@@ -12,7 +12,7 @@ import java.util.ArrayList;
 /**
  * Created by Sanket on 08-10-2015.
  */
-public class Adapter extends RecyclerView.Adapter<Adapter.V> {
+public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.V> {
     private ArrayList<Lawyer>l =new ArrayList<>();
     private LayoutInflater layout;
     static class V extends RecyclerView.ViewHolder {
@@ -26,7 +26,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.V> {
         }
     }
 
-    public Adapter(Context context,ArrayList<Lawyer>l)
+    public CustomAdapter(Context context,ArrayList<Lawyer>l)
     {
         layout=LayoutInflater.from(context);
         this.l=l;

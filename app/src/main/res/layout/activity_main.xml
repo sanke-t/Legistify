@@ -1,13 +1,46 @@
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="70dp"
+        android:padding="16dp"
+        android:orientation="horizontal">
 
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/spinner"
+            android:entries="@array/State"
+            android:prompt="@string/s" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/spinner1"
+            android:entries="@array/Field"
+            android:prompt="@string/l"
+            android:layout_weight="1" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:prompt="@string/c"
+            android:id="@+id/spinner2"
+            android:layout_weight="1" />
 
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/rv"
-        />
+        android:id="@+id/rv" />
 
+</LinearLayout>
 </LinearLayout>
